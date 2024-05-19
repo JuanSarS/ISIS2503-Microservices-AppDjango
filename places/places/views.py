@@ -17,7 +17,8 @@ def PlaceCreate(request):
         data_json = json.loads(data)
         place= place()
         place.name= data_json['name']
-        return HttpResponse("successfully created measurement")
-       except:
-        return HttpResponse("unsuccessfully created measurement. Variable does not exist")
+        return HttpResponse("successfully created place")
+       except Exception as e:
+        print(e)
+        return HttpResponse("unsuccessfully created place. ")
     

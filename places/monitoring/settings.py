@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'monitoring.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME':  "places_db",
         'USER': "places_user",
         'PASSWORD':  "isis2503",

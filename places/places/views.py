@@ -15,7 +15,7 @@ def PlaceCreate(request):
        try: 
         data = request.body.decode('utf-8')
         data_json = json.loads(data)
-        place= place()
+        place= Place()
         place.name= data_json['name']
         return HttpResponse("successfully created place")
        except Exception as e:

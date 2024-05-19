@@ -270,7 +270,7 @@ resources:
   type: compute.v1.instance
   properties:
     zone: us-central1-a
-    machineType: https://www.googleapis.com/compute/v1/pfirewallrojects/microservicios-lab/zones/us-central1-a/machineTypes/e2-micro
+    machineType: https://www.googleapis.com/compute/v1/projects/microservicios-lab/zones/us-central1-a/machineTypes/e2-micro
     disks:
     - deviceName: boot
       type: PERSISTENT
